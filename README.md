@@ -6,7 +6,9 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
 
 ## Getting Started
 
- - [Click here first.](GettingStarted.md)
+ - [Getting Started Guide : Click here first.](GettingStarted.md)
+ - [Textbook : Effective Computation in Physics](http://physics.codes) <br/>
+ Official course textbook, to be supplemented with free online resources below. Be sure to read Chapters 1, 15, and 16 first, as they cover basic usage of bash, git, and GitHub.
 
 ## Primary Course Links (Try here first)
 
@@ -14,8 +16,6 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
  Collaborative Calculation in the Cloud - free Ubuntu linux servers that we will use for the course.
  - [Slack (`scststudents`)](https://scststudents.slack.com) (Channel `#phys220-2018f`) <br/>
  Professional communication tool - industry standard chat application that we will use for the course.
- - [Effective Computation in Physics](https://physics.codes) <br/>
- Official course textbook, to be supplemented with free online resources below.
  - [Anaconda Python](https://www.anaconda.com/download) <br/>
  Official python distribution suitable for scientfic computing and data science. Get this if you wish to do course work on your own laptop in addition to CoCalc.
  - [Git for Windows](https://git-scm.com/download/win)<br/>
@@ -28,31 +28,20 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
 
 ## Secondary Resources (Read as needed)
 
+### Supplementary Slides 
+Check back throughout the semester for updates to these slides, as they are live documents that are continually being improved.
+ 1. [Linux/Bash Overview](http://slides.com/profdressel/linux-bash-overview)
+ 1. [Vim Overview](http://slides.com/profdressel/vim-overview)
+ 1. [Git Overview](http://slides.com/profdressel/git-overview)
+
 ### Coding Standards
  - [Chapman Coding Standards](Chapman%20Coding%20Standards.pdf) <br/>
  Chapman University CPSC Coding Standards (*use for your code*).
  - [Python Style Guide (Official Google)](https://google.github.io/styleguide/pyguide.html) <br/>
  Official Google style guide for Python (*use for your code*).
  
-### GitHub Resources
- - [GitHub Hello World](https://guides.github.com/activities/hello-world/) <br/>
- Tutorial of a simple example that demonstrates the GitHub workflow.
- - [GitHub Flow Guide](https://guides.github.com/introduction/flow/) <br/>
- Understand the flow of how GitHub works for source code management.
- - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) <br/>
- Learn concise syntax for writing beautifully formatted `html` easily in README files and Jupyter notebooks.
- 
-### Git Resources
- - [The Git Parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html) <br/>
- Understand the logic behind why `git` is the way it is.
- - [tryGit Tutorial](https://try.github.io/levels/1/challenges/1) <br/>
- Interactive tutorial for using `git`
- - [Git Tutorial](http://git-scm.com/docs/gittutorial)<br/>
- Official `git` tutorial.
- - [Git User Manual](http://git-scm.com/docs/user-manual.html)<br/>
- Official `git` manual.
- 
 ### Linux/Bash Resources:
+ - Chapter 1 of Textbook
  - [Introductory Linux/Bash Tutorial](http://linuxcommand.org/lc3_learning_the_shell.php) <br/>
  User friendly introductory tutorial of how to use the linux command line.
  - [Linux/Bash Tutorial](http://ryanstutorials.net/linuxtutorial) <br/>
@@ -62,17 +51,41 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
  - [Shell Scripting Tutorial](http://www.shellscript.sh/) <br/>
  Intermediate scripting with `bash`.
  
-### Python Resources:
- - [Python/SciPy Tutorials](http://www.scipy-lectures.org) <br/>
- Official SciPy tutorial.
- - [Learning Python/SciPy](https://lectures.quantecon.org/py/learning_python.html) <br/>
- Excellent short introduction to scientific python.
+### Git Resources
+ - Chapter 15 of Textbook
+ - [The Git Parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html) <br/>
+ Understand the logic behind why `git` is the way it is.
+ - [tryGit Tutorial](https://try.github.io/levels/1/challenges/1) <br/>
+ Interactive tutorial for using `git`
+ - [Git Tutorial](http://git-scm.com/docs/gittutorial)<br/>
+ Official `git` tutorial.
+ - [Git User Manual](http://git-scm.com/docs/user-manual.html)<br/>
+ Official `git` manual.
+ 
+### GitHub Resources
+ - Chapter 16 of Textbook
+ - [GitHub Hello World](https://guides.github.com/activities/hello-world/) <br/>
+ Tutorial of a simple example that demonstrates the GitHub workflow.
+ - [GitHub Flow Guide](https://guides.github.com/introduction/flow/) <br/>
+ Understand the flow of how GitHub works for source code management.
+ - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) <br/>
+ Learn concise syntax for writing beautifully formatted `html` easily in README files and Jupyter notebooks.
+ 
+### Basic Python Resources:
+ - Chapters 2,3,4,5,6 of Textbook
  - [Interactive Python Tutorial](http://www.learnpython.org/) <br/>
  Interactive tutorial for basic python as a refresher.
  - [Learn Python in Y Minutes](https://learnxinyminutes.com/docs/python/) <br/>
  Concise summary of basic syntax.
  - [Official Python Tutorial](https://docs.python.org/tutorial/) <br/>
  Official basic python tutorial.
+
+### Scientific Python Resources:
+ - Chapters 7,8,9,10,11,12,13 of Textbook
+ - [Python/SciPy Tutorials](http://www.scipy-lectures.org) <br/>
+ Official SciPy tutorial.
+ - [Learning Python/SciPy](https://lectures.quantecon.org/py/learning_python.html) <br/>
+ Excellent short introduction to scientific python.
 
 ## Tertiary Resources (Read as needed)
 
@@ -88,6 +101,7 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
  Recommended `vim` configuration for editing `python` code.
  
 ### LaTeX Resources
+ - Chapter 20 of Textbook
  - [LaTeX Tutorial](https://www.latex-tutorial.com) <br/>
  Friendly tutorial of how LaTeX works and how to use it.
  - [Overleaf.com](https://www.overleaf.com) <br/>
@@ -96,6 +110,8 @@ Welcome to the `PHYS220/MATH220/CPSC220` course information `README` file!  Refe
  Quick overview of the essential syntax.
  - [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)<br/>
  More comprehensive reference textbook.
+
+## Resources on Other Resources
 
 ### MATLAB Resources:
  - [Getting Started with Matlab](http://www.mathworks.com/help/matlab/getting-started-with-matlab.html) <br/>
