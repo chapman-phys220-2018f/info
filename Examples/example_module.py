@@ -9,33 +9,40 @@
 # Assignment: 0
 ###
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import animation, rc
-from IPython.display import HTML
-    
-
-"""2D Random walk library
+"""
+2D Random walk library
 
 This module introduces Monte Carlo techniques by showing how to simulate
 many particles that randomly walk around a 2D lattice. This is a crude but
 effective model for heat transfer, as well as air diffusion.
 """
 
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import animation, rc
+from IPython.display import HTML
+
+
 def walk_gen(walkers=10, steps_per_frame=1):
-    """Generator for 2D random walkers
+    """
+    Generator for 2D random walkers
     
     Yields x and y coordinate arrays for particles that randomly walk around
     a 2D lattice indexed by integers. Each walker may move in one of four
     cardinal directions randomly, on each time step. The generator yields all
     new positions with each iteration.
     
-    Args:
-      walkers : int, number of walkers
-      steps_per_frame : number of internal steps to take before each yield
+    Parameters
+    ----------
+      walkers : int
+          number of walkers
+      steps_per_frame : int
+          number of internal steps to take before each yield
     
-    Returns:
-      (xs, ys) : tuple of arrays of x and y coordinate integers for all walkers
+    Returns
+    -------
+      (xs, ys) : tuple of arrays 
+          x and y coordinate integers for all walkers
     """
     xs = np.zeros(walkers)
     ys = np.zeros(walkers)
@@ -52,21 +59,31 @@ def walk_gen(walkers=10, steps_per_frame=1):
 
 def plot_anim(frame_gen, xlim=(-30,30), ylim=(-30,30), delay=20, max_frames=100,
                    title=None, xlabel=None, ylabel=None):
-    """Produce a scatterplot point animation from a frame-generating function.
+    """
+    Produce a scatterplot point animation from a frame-generating function
     
     Return a Jupyter JavaScript wrapper around a video of the animation
     
-    Args:
-      frame_gen : Generator that yields successive tuples (xs, ys) of 
-                  points, as domain and range arrays, to plot as frames.
-                  The frames will continue until max_frames is reached.
-      xlim = (xmin,xmax) : Horizontal plot range 
-      ylim = (ymin,ymax) : Vertical plot range  
-      delay : number of ms between frames
-      max_frames : maximum number of saved frame 
-      title : plot title (optional)
-      xlabel : plot x axis label (optional)
-      ylabel : plot y axis label (optional) 
+    Parameters
+    ----------
+      frame_gen : generator 
+                  yields successive tuples (xs, ys) of points,
+                  as domain and range arrays, to plot as frames.
+                  The frames should continue until max_frames is reached.
+      xlim = (xmin,xmax)
+          Horizontal plot range, tuple of floats 
+      ylim = (ymin,ymax)
+          Vertical plot range, tuple of floats
+      delay : float
+          number of ms between frames
+      max_frames : int
+          maximum number of saved frame 
+      title : string (default: None), optional
+          plot title
+      xlabel : string (default: None), optional
+          plot x axis label
+      ylabel : string (default: None), optional
+          plot y axis label
     
     Returns:
       JavaScript object containing animation
