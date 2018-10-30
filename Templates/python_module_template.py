@@ -35,19 +35,10 @@
 # Assignment: HOMEWORK_OR_CLASSWORK_NUMBER
 ###
 
+"""
+Module Description, one line summary
 
-# Place import statements here to load code from other modules
-import numpy as np
-import pandas as pd
-import sympy as sp
-import matplotlib.pyplot as plt
-import seaborn as sb
-# The above modules are commonly used for science. The "as blah"
-# specification nicknames a module "blah" so you can write less
-# in the rest of the module (e.g., np.array instead of numpy.array)
-
-
-"""Module Description (Replace this docstring with your own documentation)
+(Replace this docstring with your own documentation)
 The first docstring at the top of the file appears in the "Description" field 
 of the help command. That is, if you load a python interpreter the following 
 makes the docstring visible:
@@ -64,6 +55,17 @@ information is usually included.
 This docstring should contain an overview and purpose of the code being
 written below, as well as example uses (if appropriate).
 """
+
+# Place import statements here to load code from other modules
+import numpy as np
+import pandas as pd
+import sympy as sp
+import matplotlib.pyplot as plt
+import seaborn as sb
+# The above modules are commonly used for science. The "as blah"
+# specification nicknames a module "blah" so you can write less
+# in the rest of the module (e.g., np.array instead of numpy.array)
+
 
 ###
 # Below is the body of the module.  Place all global constants, function 
@@ -96,7 +98,8 @@ GLOBAL_CONSTANT_1 = 0
 ###
 
 class YourClass(object):
-    """Class docstring
+    """
+    Class docstring, one line summary
     
     All classes should have their own documentation via docstrings.
     See the function docstring below for more detail.
@@ -106,9 +109,12 @@ class YourClass(object):
     Methods have their own docstrings (see below), so only include
     documentation about the attributes in the class docstring.
 
-    Attributes:
-        CONSTANT_ATTRIBUTE: Describe attributes here
-        variable_attribute: One attribute description per line
+    Attributes
+    ----------
+        CONSTANT_ATTRIBUTE: float
+            Describe attribute here, with type above
+        variable_attribute: string
+            One attribute description per line
     """
     
     # Class constant attributes should be capitalized with underscores
@@ -118,7 +124,8 @@ class YourClass(object):
     variable_attribute = "change me at will"
     
     def __init__(self, *args, **kwargs):
-        """Class constructor
+        """
+        Class constructor, one line summary
         
         Every class definition should have an __init__ method.
         All class methods should have their own docstrings as well.
@@ -128,6 +135,13 @@ class YourClass(object):
         
         The constructor initializes instance information using the arguments
         of the __init__ function. For example, class attributes may be set.
+
+        Parameters
+        ----------
+            *args : types
+                Descriptions here
+            **kwargs : types (default: value), optional
+                Descriptions here
         """
         # The "pass" keyword does nothing, so is useful when blocking
         # out intended code structure that has not yet been implemented.
@@ -136,10 +150,16 @@ class YourClass(object):
     # its previous level of indentation
     
     def class_method(self, arg1, kwarg1=defaultvalue, *args, **kwargs):
-        """Method docstring
+        """
+        Method docstring, one line summary
         
         A method is just a function that belongs to a class, so see
         below for detail about how functions work.
+        
+        Parameters
+        ----------
+            arg1 : type
+            etc.
         """
         pass
 
@@ -156,7 +176,8 @@ class YourClass(object):
 ###
 
 def your_function(arg1, kwarg1=defaultvalue, *args, **kwargs):
-    """Function docstring
+    """
+    Function docstring, one line summary
     
     All functions should have their own documentation via docstrings.
     Function arguments are positional, unless they are provided a default 
@@ -174,17 +195,22 @@ def your_function(arg1, kwarg1=defaultvalue, *args, **kwargs):
     
     All indentation should be 4 spaces.  NO TABS IN PYTHON CODE.
     
-    Args:
-        arg1: Describe the arguments of the function
+    Parameters
+    ----------
+        arg1 : type
+            Describe the arguments of the function
     
-    Keyword Args:
-        kwarg1: Describe keyword arguments of function (defaultvalue)
+        kwarg1: type (default: value), optional
+            Describe keyword arguments of function
 
-    Returns:
-        Describe the type and content of what the function returns here.
-        It can be useful to give an example if the type is complicated.
+    Returns
+    -------
+        type :
+            Describe the type and content of what the function returns here.
+            It can be useful to give an example if the type is complicated.
     
-    Raises:
+    Raises
+    ------
         If any exceptions can be raised by the function, describe them.
     """
     
@@ -195,7 +221,8 @@ def your_function(arg1, kwarg1=defaultvalue, *args, **kwargs):
 
 
 def your_generator(arg1, kwarg1=defaultvalue, *args, **kwargs):
-    """Generator docstring
+    """
+    Generator docstring, one line summary
     
     A generator is just a function that can pause its operation to
     return a value and then resume where it left off later.
@@ -203,20 +230,25 @@ def your_generator(arg1, kwarg1=defaultvalue, *args, **kwargs):
     In python, the only difference is the replacement of the "return"
     keyword with the "yield" keyword.
     
-    Args:
-        arg1: Describe the arguments of the function
+    Parameters
+    ----------
+        arg1 : type
+            Describe the arguments of the function
     
-    Keyword Args:
-        kwarg1: Describe keyword arguments of function (defaultvalue)
+        kwarg1: type (default: value), optional
+            Describe keyword arguments of function
 
-    Yields:
-        Describe the type and content of what the function yields here.
+    Yields
+    -------
+        type :
+            Describe the type and content of what the generator yields here.
     
-    Raises:
-        If any exceptions can be raised by the function, describe them.
+    Raises
+    ------
+        If any exceptions can be raised by the generator, describe them.
     """
     
-    # Function body here - note the nice extra indented line for whitespace
+    # Generator body here - note the nice extra indented line for whitespace
     
     # The "yield" keyword pauses the generator and returns an output.
     # The next time the generator is called, it resumes at the line after
@@ -244,7 +276,9 @@ def your_generator(arg1, kwarg1=defaultvalue, *args, **kwargs):
 
 
 def main(local_argv):
-    """Main function
+    """
+    Main function
+    
     See below for why this would exist. The local_argv argument lists command
     line arguments taken from sys.argv within the protected main block below.
     """

@@ -35,7 +35,13 @@ Check back throughout the semester for updates to these slides, as they are live
  1. [Git Overview](http://slides.com/profdressel/git-overview)
  1. [IPython Overview](http://slides.com/profdressel/jupyter-overview)
  1. [Python Objects Overview](http://slides.com/profdressel/python-objects-overview)
- 
+ 1. [Numpy/Pandas Overview](https://slides.com/profdressel/numpy-and-pandas-overview)
+
+### Supplementary Cheatsheets
+ - [Python Basics](Cheatsheets/Python_Basics_Cheat_Sheet.pdf)
+ - [Python Numpy](Cheatsheets/Python_NumPy_Cheat_Sheet.pdf)
+ - [Python SciPy Linear Algebra](Cheatsheets/Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf)
+ - [Python Matplotlib](Cheatsheets/Python_Matplotlib_Cheat_Sheet.pdf)
 
 ### Coding Standards
  - [Chapman Coding Standards](Chapman%20Coding%20Standards.pdf) <br/>
